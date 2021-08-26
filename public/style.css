@@ -1,0 +1,16 @@
+.player-body {
+    margin: 150px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+    color: #444;
+    padding: 0 10px;
+    background-color: #444;
+  }
+
+.videos-list{
+  margin: 150px auto;
+  max-width: 650px;
+background-color: rgb(230, 210, 210);
+}
