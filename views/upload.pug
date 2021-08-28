@@ -1,0 +1,15 @@
+html 
+    head 
+        meta(chatset = "UTC-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Player
+        style
+          include ../public/style.css
+    
+
+    body
+        h1= 'title'
+        p Welcome to #{'title'}
+        form(method='post', enctype='multipart/form-data')
+            input(type='file', name='imageupload')
+            input(type='submit', name='uploadimage', value='Upload Image')

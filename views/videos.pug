@@ -10,6 +10,6 @@ html
     body(class = "videos-list")
         div
             ul 
-                each video in files
-                    a( href='/play/'+video)
-                        li= video
+                each video in videos
+                    a( href=`/play?video=${video.path}&type=${video.type}`)
+                        li= video.name

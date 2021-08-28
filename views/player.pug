@@ -9,4 +9,4 @@ html
 
     body( class = "player-body") 
         video(id = "videoPlayer" width="650" controls muted="muted" autoplay) 
-            source(src=`/video/${file}` type="video/mp4" )
+            source(src=`/video?video=${video}&type=${type}` type="video/mp4" )
