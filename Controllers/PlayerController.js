@@ -1,5 +1,7 @@
 const VideosRepository = require("../Repositories/VideosRepository");
 const fs = require("fs");
+const multer = require("multer");
+const upload  = multer({dest : "../videos/"});
 
 module.exports  =  {
 
@@ -42,7 +44,7 @@ module.exports  =  {
     },
 
     postUploadVideo : async function(req , res){
-
+        res.send(req.file);
         VideoMetadata.create({ name: 'Chandan with dog', path: 'videos/VID_20161116_164505.mp4' , type :'video/mp4' })
         .then(video => {
           console.log(user.get({

@@ -10,6 +10,6 @@ html
     body
         h1= 'title'
         p Welcome to #{'title'}
-        form(method='post', enctype='multipart/form-data')
-            input(type='file', name='imageupload')
+        form(method='post', enctype='multipart/form-data' action ="/upload_video")
+            input(type='file', name='video')
             input(type='submit', name='uploadimage', value='Upload Image')
